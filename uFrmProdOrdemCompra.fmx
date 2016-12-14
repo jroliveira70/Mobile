@@ -1,0 +1,36 @@
+inherited frmProdOrdemCompra: TfrmProdOrdemCompra
+  Caption = 'Produtos'
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  object Listview: TListView
+    ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+    ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 447.000000000000000000
+    Size.Height = 335.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object ToolBar1: TToolBar
+    Position.Y = 81.000000000000000000
+    Size.Width = 447.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 447.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Ordem de Compra - Listagem de Produtos'
+    end
+  end
+end

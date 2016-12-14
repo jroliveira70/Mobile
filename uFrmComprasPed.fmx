@@ -1,0 +1,43 @@
+inherited frmComprasPed: TfrmComprasPed
+  Caption = 'Pedidos'
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  object ToolBar1: TToolBar
+    Position.Y = 81.000000000000000000
+    Size.Width = 447.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label1: TLabel
+      Align = Center
+      TextSettings.HorzAlign = Center
+      Text = 'Pedidos em Aberto'
+    end
+    object btnBack: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'btnBack'
+      OnClick = btnBackClick
+    end
+  end
+  object ListView: TListView
+    ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+    ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 447.000000000000000000
+    Size.Height = 331.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    OnItemClick = ListViewItemClick
+    SearchVisible = True
+  end
+end

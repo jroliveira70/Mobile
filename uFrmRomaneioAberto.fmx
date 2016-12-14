@@ -1,0 +1,30 @@
+inherited frmRomaneioAberto: TfrmRomaneioAberto
+  Caption = 'frmRomaneioAberto'
+  DesignerMasterStyle = 3
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  inherited ToolBar1: TToolBar
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Text = 'Romaneio Aberto'
+    end
+  end
+  inherited ListBox1: TListBox
+    Position.Y = 129.000000000000000000
+    Viewport.Width = 447.000000000000000000
+    Viewport.Height = 33.000000000000000000
+    inherited DateEdit1: TDateEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited Button1: TButton
+      Size.Width = 32.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+  end
+  inherited ListView1: TListView
+    Size.Height = 294.000000000000000000
+  end
+end

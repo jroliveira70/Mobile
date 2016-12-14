@@ -1,0 +1,30 @@
+inherited frmAjuda: TfrmAjuda
+  Caption = 'frmAjuda'
+  DesignerMasterStyle = 3
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 447.000000000000000000
+    Size.Height = 375.000000000000000000
+    Size.PlatformDefault = False
+    URL = 'www.moldenox.com.br'
+    object ToolBar1: TToolBar
+      Size.Width = 447.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Contents
+        Size.Width = 447.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Sobre'
+      end
+    end
+  end
+end

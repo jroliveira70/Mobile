@@ -1,0 +1,107 @@
+inherited frmLoginBase: TfrmLoginBase
+  Caption = 'Login'
+  OnCloseQuery = FormCloseQuery
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 3
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  object Layout1: TLayout
+    Align = Center
+    Size.Width = 201.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object btnEntrar: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Entrar'
+      OnClick = btnEntrarClick
+    end
+    object cxUsuario: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = 'JUNIOR'
+      Position.X = 8.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object cxSenha: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Password = True
+      Text = '170112'
+      Position.X = 8.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      Text = 'Usu'#225'rio'
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      Text = 'Senha'
+    end
+    object Button2: TButton
+      Position.X = 96.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Limpar'
+      OnClick = Button2Click
+    end
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 201.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Label3: TLabel
+        Align = Center
+        StyledSettings = [Family, Size, FontColor]
+        TextSettings.Font.Style = [fsBold, fsItalic]
+        TextSettings.HorzAlign = Center
+        Text = 'Login'
+      end
+    end
+    object lberro: TLabel
+      Enabled = False
+      StyledSettings = [Family, Style]
+      Opacity = 0.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.FontColor = claRed
+      TextSettings.HorzAlign = Center
+      Text = 'Usuario ou senha incorreto(s)'
+    end
+  end
+end

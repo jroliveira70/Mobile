@@ -1,0 +1,72 @@
+inherited frmRomaneioBaixado: TfrmRomaneioBaixado
+  Caption = 'Romaneio Baixado'
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  object ToolBar1: TToolBar
+    Position.Y = 81.000000000000000000
+    Size.Width = 447.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label1: TLabel
+      Align = Center
+      Text = 'Romaneio Baixados'
+    end
+    object btnBack: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Text = 'btnBack'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Top
+    Position.Y = 121.000000000000000000
+    Size.Width = 447.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 443.000000000000000000
+    Viewport.Height = 29.000000000000000000
+    object DateEdit1: TDateEdit
+      Date = 42572.000000000000000000
+      Align = Left
+      Size.Width = 100.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Align = Left
+      Position.X = 100.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'searcheditbutton'
+      TabOrder = 1
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+    ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 447.000000000000000000
+    Size.Height = 302.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+end

@@ -1,0 +1,15 @@
+inherited frmPcpProdComprados: TfrmPcpProdComprados
+  Caption = 'Produtos Comprados'
+  DesignerMasterStyle = 0
+  inherited imgLogo: TImage
+    MultiResBitmap.Height = 82
+    MultiResBitmap.Width = 448
+    MultiResBitmap.LoadSize = 1
+  end
+  inherited ListView1: TListView
+    inherited ListBox1: TListBox
+      Viewport.Width = 433.000000000000000000
+      Viewport.Height = 29.000000000000000000
+    end
+  end
+end
