@@ -53,7 +53,7 @@ inherited frmLoginBase: TfrmLoginBase
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 15.000000000000000000
-      Text = 'Usu'#225'rio'
+      Text = 'User'
     end
     object Label2: TLabel
       StyledSettings = [Family, Style, FontColor]
@@ -63,7 +63,7 @@ inherited frmLoginBase: TfrmLoginBase
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 15.000000000000000000
-      Text = 'Senha'
+      Text = 'Pass'
     end
     object Button2: TButton
       Position.X = 96.000000000000000000
